@@ -6,6 +6,6 @@
              mc:Ignorable="d"
              x:Class="XF_Images.ImagePage1">
 
-    <Image Source="http://www.macoratti.net/Imagens/animais/cao1.jpg" Aspect="AspectFit"/>
+    <!--<Image Source="http://www.macoratti.net/Imagens/animais/cao1.jpg" Aspect="AspectFit"/>-->
 
 </ContentPage>
