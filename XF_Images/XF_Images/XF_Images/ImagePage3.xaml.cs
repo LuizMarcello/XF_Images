@@ -14,6 +14,8 @@ namespace XF_Images
         public ImagePage3()
         {
             InitializeComponent();
+
+            image.Source = ImageSource.FromResource("XF_Images.Images.LogoPhoenix.jpg");
         }
     }
 }
