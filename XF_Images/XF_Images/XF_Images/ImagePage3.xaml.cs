@@ -15,7 +15,7 @@ namespace XF_Images
         {
             InitializeComponent();
 
-            //image.Source = ImageSource.FromResource("XF_Images.Images.LogoPhoenix.jpg");
+            image.Source = ImageSource.FromResource("XF_Images.Images.LogoPhoenix.jpg");
         }
     }
 }
