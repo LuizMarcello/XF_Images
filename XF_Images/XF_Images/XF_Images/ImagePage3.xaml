@@ -7,6 +7,7 @@
              xmlns:loocall="clr-namespace:XF_Images.ExtensionMarkup"
              x:Class="XF_Images.ImagePage3">
 
+    <!--Criando uma extensão de marcação(Classe EmbeddedImage)-->
     <Image Source="{loocall:EmbeddedImage XF_Images.Images.LogoPhoenix.jpg}"
            x:Name="image"
            Aspect="AspectFill" />
