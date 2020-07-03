@@ -16,31 +16,43 @@ namespace XF_Images
         {
             InitializeComponent();
 
-            Image image = new Image
-            {
-                Source = "http://macoratti.net/Imagens/animais/cao2.jpg",
-                Aspect = Aspect.AspectFit
-            };
+            //Image image = new Image
+            //{
+            //    Source = "http://macoratti.net/Imagens/animais/cao2.jpg",
+            //    Aspect = Aspect.AspectFit
+            //};
 
-            //Cria uma instância da classe "TapGestureRecognizer"
-            TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
+            ////Cria uma instância da classe "TapGestureRecognizer"
+            //TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
 
-            //Adiciona o reconhecedor de gestos(objeto image) à coleção "GestureRecognizers"
-            image.GestureRecognizers.Add(tapGestureRecognizer);
+            ////Configurando o número de toques
+            //tapGestureRecognizer.NumberOfTapsRequired = 2;
 
-            //Manipula(tratando) o evento "Tapped"
-            //Ação que ocorrerá ao clicar na imagem
-            tapGestureRecognizer.Tapped += async (sender, e) =>
-            {
-                image.Opacity = .5;
-                //Colocando um delay
-                await Task.Delay(2000);
-                image.Opacity = 1;
-            };
+            ////Adiciona o reconhecedor de gestos(objeto image) à coleção "GestureRecognizers"
+            //image.GestureRecognizers.Add(tapGestureRecognizer);
 
-            Content = image;
+            ////Manipulando(tratando) o evento "Tapped"
+            ////Ação que ocorrerá ao clicar na imagem
+            //tapGestureRecognizer.Tapped += async (sender, e) =>
+            //{
+            //    image.Opacity = .5;
+            //    //Colocando um delay
+            //    await Task.Delay(2000);
+            //    image.Opacity = 1;
+            //};
 
+            //Content = image;
+        }
 
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            image.Opacity = .5;
+            //Colocando um delay
+            await Task.Delay(2000);
+            image.Opacity = 1;
         }
     }
 }
+           
+
+

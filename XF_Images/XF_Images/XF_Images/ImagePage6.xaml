@@ -5,5 +5,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="XF_Images.ImagePage6">
-    
+
+    <Image Source="http://macoratti.net/Imagens/animais/cao1.jpg" x:Name="image">
+        <!--Usando a propriedade anexada "GestureRecognizers"-->
+        <Image.GestureRecognizers>
+            <!--Reconhecedor de gestos definindo o evento-->
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
+           
+        </Image.GestureRecognizers>
+    </Image>
 </ContentPage>
+          
+            
+    
