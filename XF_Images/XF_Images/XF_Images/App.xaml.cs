@@ -10,7 +10,7 @@ namespace XF_Images
         {
             InitializeComponent();
 
-            MainPage = new ImagemExercicio5();
+            MainPage = new ImagemExercicio6();
         }
 
         protected override void OnStart()
