@@ -5,11 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="XF_Images.ImagemExercicio10">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    
+    <AbsoluteLayout>
+        <Image x:Name="image" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+
+        <ActivityIndicator Color="White" IsRunning="{ }" 
+                           AbsoluteLayout.LayoutBounds="0.5,0.5,100,100"
+                           AbsoluteLayout.LayoutFlags="PositionProportional" />
+    </AbsoluteLayout>
+    
 </ContentPage>
